@@ -10,5 +10,5 @@ type: short_description
 
 # Câu hỏi 2: liệt kê các file theo từng vùng 
 - file 1: vùng repostory
-- file 2: vùng staging
-- file 3: vùng staging
+- file 2: vùng working
+- file 3: vùng working
