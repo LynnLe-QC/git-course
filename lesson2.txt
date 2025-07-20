@@ -9,6 +9,6 @@ type: short_description
 - *short_description: max 50 kí tự, viết tiếng Anh hoặc tiếng Việt không dấu*
 
 # Câu hỏi 2: liệt kê các file theo từng vùng 
-- file 1: vùng repostory
-- file 2: vùng working
-- file 3: vùng working
+- vùng repostory: file 1
+- vùng staging: không có file nào
+- vùng working: file1, file2, file 3
