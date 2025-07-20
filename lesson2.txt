@@ -1,0 +1,14 @@
+# Câu hỏi 1: giải thích các câu lệnh
+1. git init - *dùng để khởi tạo git*
+2. git add<file_name> - *thêm <file_name> vào vùng Staging*
+3. git add . - *thêm toàn bộ file vào vùng Staging*
+4. git commit -m "message" - *đưa file lên repostory, trong đó message là tùy chọn, dùng để quản lý phiên bản của mình*
+*Quy tắc message:*
+type: short_description
+- *type: chore (sửa nhỏ lẻ, xóa file không dùng tới); feat (thêm tính năng hoặc testcase mới); fix (sửa lỗi test)*
+- *short_description: max 50 kí tự, viết tiếng Anh hoặc tiếng Việt không dấu*
+
+# Câu hỏi 2: liệt kê các file theo từng vùng 
+- file 1: vùng repostory
+- file 2: vùng staging
+- file 3: vùng staging
