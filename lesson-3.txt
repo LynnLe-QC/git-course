@@ -1,0 +1,83 @@
+## Bài tập 1
+
+- `git commit --amend`: chỉnh sửa commit cuối nhưng chưa chỉ định message mới 
+- ` git commit --amend -m"message"`: chỉnh sửa commit cuối và có chỉ định message mới
+- `git restore --staged <path_file>`: đưa file từ vùng staging về working
+- `git reset HEAD~1`: đưa file từ vùng repostory về working 
+
+## Bài tập 2
+
+a. Tạo 3 file: file1, file2, file3
+- Working: không có file nào
+- Staging: không có file nào
+- Repostory: không có file nào
+
+b. Chạy lệnh: git init
+- Working: file1, file2, file3
+- Staging: không có file nào
+- Repostory: không có file nào
+
+c. Chạy lệnh: git commit -m”init project”
+- Working: không có file nào
+- Staging: không có file nào
+- Repostory: không có file nào
+
+d. Chạy lệnh: git add file1
+- Working: file1, file2, file3
+- Staging: file1
+- Repostory: không có file nào
+
+e. Chạy lệnh: git commit -m”add file”
+- Working: file1, file2, file3
+- Staging: không có file nào
+- Repostory: file1
+
+f. Chạy lệnh: git add .
+- Working: file1, file2, file3
+- Staging: file2, file3
+- Repostory: file1
+
+g. Chạy lệnh: git restore --staged file2
+- Working: file1, file2, file3
+- Staging: file3
+- Repostory: file1
+
+h. Chạy lệnh: git commit -m”add all files”
+- Working: file1, file2, file3
+- Staging: không có file nào
+- Repostory: file1, file3
+
+i. Chạy lệnh: git reset HEAD~1
+- Working: file1, file2, file3
+- Staging: file3
+- Repostory: file1
+
+## Bài tập 3
+Tạo folder lesson-3-git
+a. Chạy lệnh git init
+- Working: chưa có file nào
+- Staging: chưa có file nào
+- Repostory: chưa có file nào
+
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+- Working: file1.txt, file2.txt, oops/file3.txt.
+- Staging: chưa có file nào
+- Repostory: chưa có file nào
+
+c. Thêm file .gitignore, thêm vào 2 dòng: 
+   i. file1.txt
+   ii. oops/
+- Working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging: chưa có file nào
+- Repostory: chưa có file nào
+
+d. Chạy lệnh: git add .
+- Working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging: file2.txt, .gitignore
+- Repostory: chưa có file nào
+
+e. Chạy lệnh: git commit -m"init project"
+- Working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+- Staging: chưa có file nào
+- Repostory: file2.txt, .gitignore
+
